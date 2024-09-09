@@ -17,21 +17,21 @@ const latestWorkoutPlans = [
 export default function FitnessWorld() {
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.section}>
-        <Text style={styles.header}>StartYour Fitness Journey</Text>
-        <Text style={styles.workoutDescp}>Welcome to join fitness journey, where every rep brings you closer to your best self. Let’s crush your fitness goals together!</Text>
-        <Text style={styles.headerbenefit}>Benefits of Our Fitness Programs</Text>
-        <Text style={styles.text}>• Build muscle strength</Text>
-        <Text style={styles.text}>• Improve cardiovascular health</Text>
-        <Text style={styles.text}>• Increase flexibility and balance</Text>
-        <Text style={styles.text}>• Mental clarity and focus</Text>
+    <ScrollView>
+      <View>
+        <Text>StartYour Fitness Journey</Text>
+        <Text>Welcome to join fitness journey, where every rep brings you closer to your best self. Let’s crush your fitness goals together!</Text>
+        <Text>Benefits of Our Fitness Programs</Text>
+        <Text>Build muscle strength</Text>
+        <Text>Improve cardiovascular health</Text>
+        <Text>Increase flexibility and balance</Text>
+        <Text>Mental clarity and focus</Text>
       </View>
 
 
       {/* Featured Training Types Section */}
-      <View style={styles.section}>
-        <Text style={styles.header}>Featured Training Types</Text>
+      <View>
+        <Text>Featured Training Types</Text>
       </View>
 
 
