@@ -34,11 +34,11 @@ export default function FitnessWorld() {
         <Text>Featured Training Types</Text>
       </View>
 
-      {/* Workout Plans Section */}
+      {/*Popular Workout Plans Section */}
     
 
 
-      {/* Intense Workout Plans Section */}
+      {/*Intense Workout Plans Section*/}
 
       
     </ScrollView>
