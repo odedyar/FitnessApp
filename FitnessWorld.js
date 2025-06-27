@@ -14,6 +14,12 @@ const IntenseWorkoutPlans = [
 
 ];
 
+const BeginnerWorkoutPlans = [
+  { id: '1', title: 'Zumba Class', description: '30 minutes of zumba classes', duration: '30 min', imageUrl: 'https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+  { id: '2', title: 'Circuit Training', description: '20 minutes of circuit training', duration: '20 min', imageUrl: 'https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2lyY3VpdCUyMHRyYWluaW5nfGVufDB8fDB8fHwy' },
+  { id: '3', title: 'Pilate Training', description: '60 minutes of pilate training', duration: '20 min', imageUrl: 'https://images.unsplash.com/photo-1620134280013-e756c46affc6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+];
+
 
 export default function FitnessWorld() {
 
@@ -84,7 +90,18 @@ export default function FitnessWorld() {
           showsHorizontalScrollIndicator={false}
         />
     </View>
-      
+
+    {/* Beginner's Workout Plan */}
+    <View style={styles.section}>
+        <Text style={styles.header}>Beginner's Workout Plan</Text>
+        <FlatList
+        data={BeginnerWorkoutPlans}
+        renderItem={renderWorkout}
+        keyExtractor={(item) => item.id}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        />
+    </View>
     </ScrollView>
   );
 }
